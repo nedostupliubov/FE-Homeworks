@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+        } 
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container flex">
+            <img src="../images/logo.JPG" alt="logo" width="100px" height="80px">
+            <nav>
+                <ul class="flex" style="gap: 2rem;">
+                    <li>
+                        <a href="../index.html"> Выбрать авто</a>
+                    </li>
+                    <li>
+                        <a href="./registration.html"> Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="./authorization.html"> Авторизация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div>
+            <h2> Вход на сайт</h2>
+        </div>
+        <section>
+            <div>
+                <p>
+                    <label>
+                        <input style="width:450px;" type="text" placeholder="Войти через ДІЮ">
+                    </label>
+                </p>
+            </div>
+            <div>
+                <h3> Или </h3>
+                <form action="https://fom.in.ua/echo" method="post">
+                    <p>
+                        <label>
+                            <input style="width:450px;" type="email" name="email" placeholder="Email" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input style="width:450px;" type="password" name="password" placeholder="Пароль" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="license">
+                            <span>Запомнить меня</span>
+                        </label>
+                    </p>
+                    <button type="submit" style="background-color:rgb(122, 82, 109) ;">Войти</button>
+                </form>
+            </div>
+        </section>
     
 </body>
 </html>

@@ -5,34 +5,220 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    .container {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
+    <style>
+       .flex {
+           display: flex;
+       } 
+       .container {
+           max-width: 600px;
+       }
+    </style>
 </head>
 
 <body>
-    <header align="center">
-        <h1>ДЗ5</h1>
+    <header>
+        <div class="container flex">
+            <img src="./images/logo.JPG" alt="logo" width="100px" height="80px">
+            <nav>
+                <ul class="flex" style="gap: 2rem;">
+                    <li>
+                        <a href="./index.html">Выбрать авто</a>
+                    </li>
+                    <li>
+                        <a href="../FE-Homeworks/pages/registration.html"> Регистрация</a>
+                    </li>
+                    <li>
+                        <a href="../FE-Homeworks/pages/authorization.html"> Авторизация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="container">
-        <fieldset>
-            <legend>Описание группы</legend>
-            <p>
-                <label for="nameId">Введите Имя</label>
-                <input id="nameId" type="text" name="name" placeholder="Введите имя"/>
-            </p>
-            <p>
-                <label>
-                    <span>Введите Фамилию</span>
-                    <input type="text" name="family" placeholder="Введите фамилию"/> 
-                </label>
-            </p>
-        </fieldset>
-
+    <section class="container"> 
+        <form style="background-color: rgb(202, 169, 194);" action="https://fom.in.ua/echo" method="post">
+            <fieldset>
+                <legend>Подбор авто</legend>
+                <p>
+                    <label>
+                        <span>Марка</span>
+                        <select id="brand" name="brand">
+                            <option value="0" selected>Любая</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Citroen</option>
+                            <option value="4">Ford</option>
+                            <option value="5">Hyundai</option>
+                            <option value="6">Kia</option>
+                            <option value="7">Lexus</option>
+                            <option value="8">Toyota</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Страна производитель</span>
+                        <select id="country" name="country">
+                            <option value="0" selected>Любая</option>
+                            <option value="1">Германия</option>
+                            <option value="2">Корея</option>
+                            <option value="3">США</option>
+                            <option value="4">Франция</option>
+                            <option value="5">Япония</option>
+                            <option value="6">Италия</option>
+                            <option value="7">Китай</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Тип кузова</span>
+                        <select id="body" name="body">
+                            <option value="0" selected>Любой</option>
+                            <option value="1">Универсал</option>
+                            <option value="2">Седан</option>
+                            <option value="3">Хэтчбэк</option>
+                            <option value="4">Кросовер</option>
+                            <option value="5">Кабриолет</option>
+                            <option value="6">Пикап</option>
+                            <option value="7">Купе</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Тип коробки передач</span>
+                        <select id="transmission" name="transmission"> 
+                            <option value="0" selected>Любая</option>
+                            <option value="1">Механика</option>
+                            <option value="2">Автомат</option>
+                            <option value="3">Типтроник</option>
+                            <option value="4">Робот</option>
+                            <option value="5">Вариатор</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Тип топлива</span>
+                        <select id="fuel" name="fuel">
+                            <option value="0" selected>Любой</option>
+                            <option value="1">Бензин</option>
+                            <option value="2">Дизель</option>
+                            <option value="3">Газ</option>
+                            <option value="4">Гибрид</option>
+                            <option value="5">Электро</option>
+                            <option value="6">Газ/Бензин</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Год выпуска от</span>
+                        <input type="number" name="year" min="1960" max="2022" value="1960">
+                     </label>
+                     <label>
+                        <span> до</span>
+                        <input type="number" name="year" min="1960" max="2022" value="2022">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Цена от</span>
+                        <input type="number" name="price" min="3000" max="150000" value="3000">
+                    </label>  
+                    <label> 
+                        <span> до</span>
+                        <input type="number" name="price" min="3000" max="150000" value="150000">
+                        $
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span>Цвет</span>
+                        <input type="color" name="color">
+                    </label>
+                </p>
+                <p>
+                    <span>Состояние:</span><br> 
+                    <label>
+                        <span>Участие в ДТП:</span><br>
+                        <input type="radio" name="accident" value="yes">
+                        Было
+                    </label><br>
+                     <label>  
+                        <input type="radio" name="accident" value="no">
+                        Не было
+                    </label><br>
+                    <label>
+                        <span>Техническое состояние:</span><br>
+                        <input type="radio" name="condition" value="intact">
+                        Неповрежденное
+                    </label><br>
+                    <label> 
+                        <input type="radio" name="condition" value="refurbished">
+                        Отремонтированные повреждения
+                    </label><br>
+                    <label> 
+                        <input type="radio" name="condition" value="damaged">
+                        Поврежденное
+                    </label><br>
+                    <label>
+                        <input type="radio" name="condition" value="spares">
+                        На запчасти
+                    </label><br>
+                    <label>
+                        <span>Лакокрасочное покрытие:</span><br>
+                        <input type="radio" name="coating" value="new">
+                        Как новое
+                    </label><br>
+                    <label>
+                        <input type="radio" name="coating" value="refurbished">
+                        Исправленные следы использования
+                    </label><br>
+                    <label>
+                        <input type="radio" name="coating" value="damaged">
+                        Не исправленные следы использования
+                    </label><br>
+                </p>
+                <p>
+                    <span>Комфорт:</span><br>
+                    <label>
+                        <input type="checkbox" name="salon" >
+                        Кожаный салон
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="hatch" >
+                        Люк
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="climate" >
+                        Климат контроль
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="parkingSensor" >
+                        Парктроник
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="wheel" >
+                        Обогрев руля
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="seats" >
+                        Подогрев сидений
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="cruise" >
+                        Круиз контроль
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="launch" >
+                        Запуск кнопкой
+                    </label><br>
+                </p>
+                <button type="submit" style="background-color:rgb(122, 82, 109) ;">Поиск</button>
+            </fieldset>
+        </form>
     </section>
+
 </body>
 </html>

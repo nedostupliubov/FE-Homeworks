@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +9,49 @@
 </head>
 
 <body>
-    <header>
-        <nav></nav>
-    </header>
-    <main>
-        <section>
-            <h1>Title</h1>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; copyright</p>
-    </footer>
-    <script src="./js/script.js"></script>
+    <section>
+        <h2>Часть 1</h2>
+        <p>Селекторы - это виды шаблонов, используемые для выбора элемента, который необходимо стилизовать.</p>
+        <ol>Виды селекторов
+            <li> Универсальный - соответствует любому HTML-элементу</li>
+            <li> Селектор элемента - позволяет стилизовать все элементы данного типа</li>
+            <li> Селектор идентификатора - позоволяет форматировать один конкретный элемент</li>
+            <li> Селектор потомка - применяет стили к элементам, расположенным внутри элемента контейнера</li>
+            <li> Дочерний селектор - применяет стили только если дочерний элемент идет сразу за родительским и между ними нет других элементов</li>
+            <li> Сестринский - стилизует все элементы из группы одного уровня</li>
+            <li> Селектор атрибута - стилизует элементы, выбранные на основе имени атрибута</li>
+            <li> Селектор класса - задает стиль для одного и более элементов с одинаковым именем класса</li>
+        </ol>
+    </section>
+    <div class="container">
+        <p>
+            <h2>Часть 2</h2>
+        </p>
+        <p>
+            <ul class="list">
+                <span> Список</span>
+                <li id="main">Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </p>
+    </div>
+   <div class="section">
+        <p>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <h3 class="title">Lorem ipsum dolor sit amet.</h3>
+        </p>
+   </div>
+   <section class="nav">
+       <p> Навигация</p>
+        <a href="https://www.facebook.com/">facebook</a><br>
+        <a href="https://www.instagram.com/">instagram</a><br>
+        <a href="https://web.telegram.org/k/" id="telegram">telegram</a>
+   </section>
+
 </body>
 
 </html>

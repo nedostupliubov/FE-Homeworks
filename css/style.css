@@ -1,0 +1,74 @@
+p + h2 {
+    color: rgb(154, 17, 200);
+}
+.container {
+    background-color: rgb(218, 189, 202);
+}
+#main {
+    color: rgb(230, 115, 26);
+}
+span {
+    color: rgb(16, 16, 2);
+}
+.container .list {
+    color: rgb(233, 242, 141);
+}
+p ~ h3 {
+    color: rgb(123, 71, 132);
+}
+.section {
+    background-color: rgb(238, 243, 180) ;
+}
+.section > .title {
+    background-color: rgb(104, 220, 181);
+}
+a[href^="http"] {
+    color: rgb(217, 85, 151);
+}
+a[href*="facebook"]{
+    color: rgb(9, 128, 128);
+}
+.nav {
+    color: rgb(230, 115, 26);
+    background-color: rgb(241, 238, 235);
+}
+#telegram {
+    color: rgb(87, 94, 145);
+}
+.card {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px; 
+    font-weight: 400; 
+    line-height: 1.7; 
+    color: #909090 ;
+    text-align: center;
+}
+img {
+    width: 250px;
+    height: 300px;
+    border-radius: 0.5rem;
+}
+.block {
+    width: 300px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: #ffffff;
+    box-shadow: 0 0 30px 5px rgba(50, 50, 100, 0.25);
+    align-items: center;
+    text-align: center;
+}
+h1 {
+    color: #303030;
+    font-weight: 700;
+}
+h2, h3 {
+    color: #303030;
+    font-weight: 700;
+    line-height: 0.5;
+}
+#more {
+    text-align: right;
+    color: #1d3eb5;
+}

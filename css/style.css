@@ -42,4 +42,5 @@ img {
 .card {
     display: inline-block;
    max-width: 500px;
+   vertical-align: top;
 }

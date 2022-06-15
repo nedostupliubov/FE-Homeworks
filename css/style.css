@@ -1,54 +1,29 @@
-* {
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #000000;
-}
-h1 {
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 79px;
-    padding-top: 162px;
-    padding-bottom: 60px;
-}
-
-h2 {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 37.5px;
-    text-align: center;
-    padding: 112px 0px 50px 0px;
-}
-
-h3 {
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 24.61px;
-    padding: 50px 0px 20px 406px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #727272;
+background-color: #F9F9F9;
 }
 
 .container {
     width: 100%;
-    background-color: #EEEFF1;
-    padding-left: 399px;
-    padding-bottom: 141px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-ul {
-    display: flex;
-    gap: 2rem;
-    letter-spacing: 0.1rem;
-    list-style-type: none;
-    padding-top: 79px;
-    padding-right: 910px;
+img {
+    max-width: 100%;
 }
 
 a {
@@ -56,58 +31,141 @@ a {
     color: #34547A;
 }
 
-p {
-   color: #727272;
-   padding: 0px 690px 100px 690px;
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+    padding-bottom: 60px;
 }
 
-button {
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 60px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    max-width: 1142px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header {
+    background-color: #EEEFF1;
+    padding-top: 79px;
+}
+
+.list {
+    display: flex;
+    gap: 42px;
+    letter-spacing: 0.1rem;
+    list-style-type: none;
+}
+
+.main-paig {
+    background-color: #EEEFF1;
+    padding-top: 162px;
+    padding-bottom: 141px;
+}
+
+.description {
+    max-width: 540px;
+    padding-bottom: 65px;
+}
+
+.button {
+    height: 65px;
     background-color: #34547A;
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.1rem;
-    width: 225px;
-    height: 65px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 19px 40px 19px 40px;
 }
 
-.container2 {
-    width: 100%;
-    background-color: #FFFFFF;
+.about-block {
+    padding-top: 112px;
+}
+
+.content {
+    max-width: 540px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img {
-    width: 141px;
-    height: 50px;
-    margin: 100px 45px 100px 0px;
-}
-
-#about {
-    padding: 0px 980px 84px 1px;
-}
-
-.section {
+.project-numbers {
     background-color: #34547A;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.container3 {
-    width: 100%;
-    text-align: center;
+.wrapper {
+    display: inline-block;
+    max-width: 100%;
+} 
+
+.card {
+    display: inline-block;
+    max-width: 100%;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projects {
+    display: inline-block;
+    max-width: 100%;
+    padding-right: 45px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#last_card {
+    padding-right: 0px;
+}
+
+.facts_block {
     background-color: #EEEFF1;
+    padding-top: 100px;
 }
 
-footer {
+.video {
+    width: 1100px;
+    height: 600px;
+    margin-top: 57px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
     background-color: #34547A;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#rights {
+.license {
+    color: #FFFFFF;
     font-size: 13px;
     line-height: 21px;
-    color: #FFFFFF;
-    padding: 0px 0px 50px 406px;
-}
-iframe {
-    width: 1110px;
-    height: 600px;
-    margin: 57px 405px 100px 405px;
+    padding-top: 20px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +7,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="./fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
-
 <body>
-    <header>
-        <nav></nav>
+    <header class="header">
+        <div class="container">
+            <ul class="topmenu">
+                <li>
+                    <a href="/index.html">HOME</a>
+                </li>
+                <li class="parent">
+                    <a href="/Products">PRODUCTS +</a>
+                    <ul class="submenu-1level">
+                        <li>
+                            <a href="Product_1">Product 1</a>
+                        </li>
+                        <li class="parent">
+                            <a href="Product_2">Product 2 </a>
+                            <ul class="submenu-2level">
+                                <li>
+                                    <a href="sub_item_1">Sub Item</a>
+                                </li>
+                                <li>
+                                    <a href="sub_item_2">Sub Item</a>
+                                </li>
+                                <li>
+                                    <a href="sub_item_3">Sub Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Product_3">Product 3 </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/About">ABOUT</a>
+                </li>
+                <li>
+                    <a href="/Contacts">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <main>
-        <section>
-            <h1>Title</h1>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; copyright</p>
-    </footer>
-    <script src="./js/script.js"></script>
+    
 </body>
-
 </html>
+    

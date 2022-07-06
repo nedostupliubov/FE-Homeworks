@@ -431,3 +431,7 @@ margin-left: 25px;
 .link-wrap:hover {
     background-color:rgba(248, 245, 245, 0.5);
 }
+
+.footer {
+    margin-bottom: 62px;
+}
